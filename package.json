@@ -1,0 +1,19 @@
+{
+  "name": "mikahouse",
+  "version": "1.0.0",
+  "description": "Mikahouse automation node.js/express web app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/LostDakota/mikahouse.git"
+  },
+  "author": "Drew Mika",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LostDakota/mikahouse/issues"
+  },
+  "homepage": "https://github.com/LostDakota/mikahouse#readme"
+}
