@@ -1,3 +1,9 @@
-var router = require('express').Router;
+/*jshint esversion: 6 */
+
+var router = require('express').Router();
+
+router.get('/', (req, res) => {
+  res.status(200).send('Hello, World!');
+});
 
 module.exports = router;

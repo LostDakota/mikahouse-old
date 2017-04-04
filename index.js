@@ -7,7 +7,7 @@ var routes = require('./controllers/index');
 
 app.set('view engine', 'pug');
 
-if(config.static){
+if(config.static) {
   app.use(require('express').static('./dist'));
 }
 

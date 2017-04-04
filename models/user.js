@@ -11,6 +11,7 @@ exports.get = function(name){
       }else{
         return rows;
       }
+      connection.close();
     });
   });
 };
