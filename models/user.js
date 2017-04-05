@@ -1,5 +1,3 @@
-/*jshint esversion: 6 */
-
 var db = require('database');
 
 exports.get = function(name){
