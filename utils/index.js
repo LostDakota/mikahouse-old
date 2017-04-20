@@ -1,8 +1,7 @@
-/*jshint esversion: 6 */
+var config = require(__dirname + '/../config');
+var bodyParser = require('body-parser');
 
-var config = require('../config');
-var rfs = require('rotating-file-stream');
-var morgan = require('morgan');
-var config = require('config');
-
-exports.logger = {};
+exports.logger = require('./logger')('combined');
+exports.jsonParser = bodyParser.json();
+exports.urlParser = bodyParser.urlencoded({extended: false});
+exports.compression = require('compression')();
