@@ -1,5 +1,6 @@
 var router = require('express').Router();
 var authentication = require('../utils/authentication');
+var exports = module.exports = {};
 
 router.get('*', (req, res, next) => {
   if(req.url == '/login'){
@@ -12,16 +13,6 @@ router.get('*', (req, res, next) => {
         res.redirect('/login');
       }
     }
-  }
-});
-
-router.post('/login', (req, res) => {
-  var ip = req.header('x-forwarded-for') || req.connection.remoteAddress;
-  var token = authentication.authenticateUser(req.body.username, req.body.password, ip);
-  if(token !== 0){
-    res.cookie('authToken', token);
-  }else{
-    res.redirect('/login');
   }
 });
 
